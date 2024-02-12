@@ -1,0 +1,8 @@
+[submodule "matlabtools"]
+	path = matlabtools
+	url = https://github.com/guidodehek/matlabtools.git
+	branch = develop
+[submodule "tools"]
+	path = tools
+	url = https://github.com/guidodehek/matlabtools.git
+	branch = develop
