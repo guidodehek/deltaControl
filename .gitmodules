@@ -1,4 +1,0 @@
-[submodule "matlabtools"]
-	path = matlabtools
-	url = https://github.com/guidodehek/deltaControl.git
-	branch = main
