@@ -2,8 +2,4 @@
 **/*.asv
 *.zip
 slprj
-*_ert_rtw
-*.elf
-*.eep
-*.hex
 *.mexw64
