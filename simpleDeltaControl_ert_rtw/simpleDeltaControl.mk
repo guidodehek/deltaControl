@@ -2,7 +2,7 @@
 ## Makefile generated for component 'simpleDeltaControl'. 
 ## 
 ## Makefile     : simpleDeltaControl.mk
-## Generated on : Thu Feb 15 20:42:28 2024
+## Generated on : Mon Mar 11 19:29:41 2024
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/simpleDeltaControl.elf
 ## Product type : executable
 ## 
@@ -220,7 +220,7 @@ DEFINES = $(DEFINES_) $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_SerialRead.cpp C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_SerialWrite.cpp C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_arduino_digitalio.cpp $(START_DIR)/simpleDeltaControl_ert_rtw/simpleDeltaControl.c $(START_DIR)/simpleDeltaControl_ert_rtw/simpleDeltaControl_data.c C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinotarget/src/MW_ArduinoHWInit.cpp C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/io_wrappers.cpp C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinotarget/scheduler/src/arduinoAVRScheduler.cpp
+SRCS = C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_arduino_digitalio.cpp C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_SerialRead.cpp C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_SerialWrite.cpp $(START_DIR)/simpleDeltaControl_ert_rtw/simpleDeltaControl.c $(START_DIR)/simpleDeltaControl_ert_rtw/simpleDeltaControl_data.c C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinotarget/src/MW_ArduinoHWInit.cpp C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/io_wrappers.cpp C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinotarget/scheduler/src/arduinoAVRScheduler.cpp
 
 MAIN_SRC = $(START_DIR)/simpleDeltaControl_ert_rtw/ert_main.c
 
@@ -230,7 +230,7 @@ ALL_SRCS = $(SRCS) $(MAIN_SRC)
 ## OBJECTS
 ###########################################################################
 
-OBJS = MW_SerialRead.o MW_SerialWrite.o MW_arduino_digitalio.o simpleDeltaControl.o simpleDeltaControl_data.o MW_ArduinoHWInit.o io_wrappers.o arduinoAVRScheduler.o
+OBJS = MW_arduino_digitalio.o MW_SerialRead.o MW_SerialWrite.o simpleDeltaControl.o simpleDeltaControl_data.o MW_ArduinoHWInit.o io_wrappers.o arduinoAVRScheduler.o
 
 MAIN_OBJ = ert_main.o
 
@@ -521,15 +521,15 @@ $(PRODUCT) : $(OBJS) $(PREBUILT_OBJS) $(LIBS) $(MAIN_OBJ)
 	$(CPP) $(CPPFLAGS) -o "$@" $(subst /,\,"$<")
 
 
+MW_arduino_digitalio.o : C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_arduino_digitalio.cpp
+	$(CPP) $(CPPFLAGS) -o "$@" $(subst /,\,"$<")
+
+
 MW_SerialRead.o : C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_SerialRead.cpp
 	$(CPP) $(CPPFLAGS) -o "$@" $(subst /,\,"$<")
 
 
 MW_SerialWrite.o : C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_SerialWrite.cpp
-	$(CPP) $(CPPFLAGS) -o "$@" $(subst /,\,"$<")
-
-
-MW_arduino_digitalio.o : C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_arduino_digitalio.cpp
 	$(CPP) $(CPPFLAGS) -o "$@" $(subst /,\,"$<")
 
 
